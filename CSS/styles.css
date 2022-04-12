@@ -1,0 +1,291 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+header {
+  background-color: black;
+}
+
+.imgindex {
+  width: 131%;
+  height: 160;
+  margin-right: 0%;
+  margin-left: 10%;
+}
+
+.navline {
+  display: inline-block;
+  margin-bottom: 1.25%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+header h1 {
+  font-family: "Orbitron";
+  color: white;
+  font-size: 65px;
+  padding-top: 2%;
+  padding-bottom: 1.5%;
+}
+
+nav {
+  color: white;
+  font-size: 15px;
+  font-family: "raleway";
+  font-weight: 800;
+}
+
+.producto {
+  background-color: white;
+  width: 590px;
+}
+
+.imagenesProductos {
+  
+  display: block;
+}
+
+footer {
+  font-size: 15px;
+  font-family: "raleway";
+  color: black;
+  line-height: 1.5;
+}
+
+footer div {
+  background-color: black;
+  line-height: 1.5;
+  color: white;
+  margin-top: 3%;
+}
+
+footer section h3 {
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.descripcionproductos {
+  font-family: "raleway";
+  font-size: 20px;
+  text-align: center;
+}
+
+ol {
+  font-size: 20px;
+  font-family: "Raleway";
+  line-height: 1.25;
+}
+
+.texto {
+  font-size: 20px;
+  font-family: "Raleway";
+  line-height: 1.25;
+}
+
+.nombres {
+  font-size: 22px;
+  font-family: "orbitron";
+  line-height: 1.25;
+  color: rgb(80, 79, 79);
+}
+
+.imagenindex {
+  text-align: right;
+  border-image-width: 50px;
+  margin-right: 0%;
+}
+
+ol {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.titulos {
+  font-family: "orbitron";
+  font-size: 45px;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.titulospequeños {
+  font-family: "orbitron";
+  font-size: 30px;
+  color: rgb(80, 79, 79);
+}
+
+.titulosprod {
+  font-family: "orbitron";
+  font-size: 30px;
+  color: rgb(80, 79, 79);
+  text-align: center;
+}
+
+#marginleft {
+  margin-left: 1.5%;
+}
+
+.montserratlight {
+  font-family: "Montserrat";
+  font-size: 55px;
+  font-weight: 300;
+  line-height: 1;
+  margin-left: 7%;
+}
+
+.montserratbold {
+  font-family: "Montserrat";
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1;
+  color: rgb(80, 79, 79);
+  margin-left: 7%;
+}
+
+.centradoyraleway {
+  text-align: center;
+  font-family: "raleway";
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.container {
+  border: 0;
+  outline: none;
+  color: white;
+  text-align: center;
+  margin-top: 2%;
+  padding-bottom: 2%;
+}
+
+.formcont {
+  text-align: left;
+  height: 25px;
+  padding-right: 200px;
+  margin-bottom: 1%;
+}
+
+.filtro {
+  margin-left: 2%;
+  padding: 0.5%;
+}
+
+input {
+  height: 40px;
+  padding-right: 700px;
+}
+
+#bottom {
+  color: black;
+  height: 40px;
+  background-color: rgb(184, 179, 179);
+  border-radius: 2px;
+  padding-right: 100px;
+  border-bottom: 10px;
+  padding-left: 100px;
+  margin-top: 10%;
+}
+
+section h3 {
+  font-family: "raleway";
+  font-size: 28px;
+  text-align: center;
+}
+
+.centradoraleway {
+  text-align: center;
+  font-size: 17px;
+  font-family: "raleway";
+  background-color: black;
+  color: white;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  line-height: 1.7;
+}
+
+.titulomarmet {
+  text-align: center;
+  font-family: "orbitron";
+  font-size: 37px;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.gridsProducto {
+  display: grid;
+  grid-template-columns: 590px 590px 590px;
+  grid-template-rows: 550px 550px;
+}
+
+/*media queries*/
+
+@media (max-width: 768px) {
+  .texto {
+    grid-template-areas:
+      "nav inicio"
+      "nav productos"
+      "nav preguntas frecuentes "
+      "nav quienes somos "
+      "nav contacto";
+    grid-template-columns: 20px 20px 20px 20px 20px;
+    grid-template-rows: auto;
+    font-size: 17px;
+    background-color: #000000;
+  }
+}
+
+@media (max-width: 768px) {
+  #inputsearch {
+    padding-right: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productos {
+    grid-template-areas:
+      "adidas flow low"
+      "fila disrutpor li"
+      "nike zoom 2k"
+      "addas forum low"
+      "fila up root"
+      "nike up tempo";
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 300px 300px 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .imagenesProductos {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 300px 300px 300px;
+    height: 300px;
+    width: 350px;
+    margin: 0%;
+    padding: 0%;
+  }
+}
+
+@media (max-width: 768px) {
+  .imgindex {
+    width: 350px;
+    height: 300px;
+  }
+
+  .mediaindex {
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 300px 100pz 100px;
+  }
+}

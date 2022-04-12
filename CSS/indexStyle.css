@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/* estilo header */
+
+.header {
+  background-color: black;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.tituloHeader {
+  color: white;
+  font-family: "Orbitron";
+  font-size: 65px;
+  padding-top: 2%;
+  padding-bottom: 1.5%;
+}
+
+.listaNavegacion {
+  font-family: "montserrat";
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headerLink {
+  color: white;
+  text-decoration: none;
+}
+
+.barraBusqueda {
+  align-self: center;
+  width: 25%;
+  padding-bottom: 0.5%;
+  padding-top: 0.5;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.textoFoto {
+  font-family: "raleway";
+  font-size: 48px;
+  text-align: left;
+}
+
+.pedidoButton {
+  text-align: left;
+  text-decoration: none;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  color: black;
+}
+
+.tituloPayments,
+.tituloMarcas,
+.tituloProducto {
+  font-family: "orbitron";
+  font-size: 42px;
+  text-align: center;
+  color: rgb(55, 55, 55);
+  padding-bottom: 1.5%;
+}
+
+.tituloPayments {
+  padding-top: 2%;
+}
+
+.subtituloPagos {
+  font-family: "raleway";
+  font-size: 18px;
+  text-align: center;
+}
+
+.visaImg,
+.americanImg,
+.masterImg,
+.paypalImg,
+.binanceImg {
+  padding-bottom: 2%;
+}
+
+/* fin estilo header */
+
+.fuenteNegrita {
+  font-family: "raleway";
+  font-weight: bold;
+  color: gray;
+  font-size: 48px;
+  text-align: left;
+}
+
+/* grid pagina principal */
+
+.indexContainer {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 1fr 1fr 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header"
+    "mainArea"
+    "marcas"
+    "paymentMethods"
+    "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.mainArea {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr 0.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "mainText"
+    "mainPhoto"
+    "pedidoButton";
+  grid-area: mainArea;
+}
+
+.mainPhoto {
+  grid-area: mainPhoto;
+}
+
+.mainText {
+  grid-area: mainText;
+}
+
+.pedidoButton {
+  grid-area: pedidoButton;
+}
+
+.marcas {
+  grid-area: marcas;
+}
+
+.paymentMethods {
+  grid-area: paymentMethods;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* fin de grid pagina principal */
+
+/* mediaquery 1024px */
+
+@media (min-width: 1024px) {
+  .mainArea {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "mainText mainPhoto"
+      "pedidoButton .";
+    grid-area: mainArea;
+  }
+
+  .listaMarcas,
+  .listaPagos {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* fin mediaquery 1024px */
+
+/* Estilos del index */
+
+.mainText {
+  text-align: left;
+}
+
+.marcas,
+.paymentMethods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletterSection {
+  color: white;
+  background-color: black;
+  font-family: "raleway";
+  font-size: 17px;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.tos {
+  font-family: "raleway";
+  font-size: 13px;
+  text-align: left;
+  background-color: black;
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.seccionesFooter {
+  font-family: "raleway";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  padding: 1.5% 1.5% 1.5% 1.5%;
+}
+
+.footerLink {
+  color: black;
+  text-decoration: none;
+}
+
+/* estilo productos */
+
+.tituloProducto {
+  margin-top: 2%;
+  padding-bottom: 2%;
+}
+
+.imagenesProductos {
+max-width: 90%;
+}
+
+.nombreProducto {
+  font-family: "orbitron";
+  font-size: 25px;
+  color: rgb(55, 55, 55);
+}
+
+.descripcionProductos {
+  font-family: "raleway";
+  font-size: 20px;
+}
+
+/* grids producto */
+
+.productosContainer {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "zapa1 zapa2 zapa3"
+    "zapa4 zapa5 zapa6";
+}
+
+.zapa1 {
+  grid-area: zapa1;
+}
+
+.zapa2 {
+  grid-area: zapa2;
+}
+
+.zapa3 {
+  grid-area: zapa3;
+}
+
+.zapa4 {
+  grid-area: zapa4;
+}
+
+.zapa5 {
+  grid-area: zapa5;
+}
+
+.zapa6 {
+  grid-area: zapa6;
+}
+
+@media (max-width: 1023px) {
+
+  .productosContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "zapa1"
+      "zapa2"
+      "zapa3"
+      "zapa4"
+      "zapa5"
+      "zapa6";
+  }
+  
+}
