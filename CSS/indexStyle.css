@@ -83,10 +83,11 @@ ul {
   text-align: center;
 }
 
-.visaImg,
-.americanImg,
-.masterImg,
-.paypalImg,
+.col-4 {
+  padding-left: 11%;
+}
+
+.paypalImg
 .binanceImg {
   padding-bottom: 2%;
 }
